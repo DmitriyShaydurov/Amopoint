@@ -25,7 +25,7 @@ let inputFields = document.getElementsByTagName('input');
 let type =  document.getElementsByTagName('select')[0];
 
 type.addEventListener("change", function(){hideInputs(type, inputFields)});
-window.onload = hideInputs(type, inputFields)
+window.onload = hideInputs(type, inputFields);
 
 
 
