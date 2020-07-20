@@ -3,7 +3,7 @@ function hideInputs(type, inputFields)
 {
     showInputs();
     for (var i = 0; i < inputFields.length; i++) {
-        if (inputFields[i].type === "text" && inputFields[i].getAttribute("name").replace("input_", "") == getType(type)) {
+        if (inputFields[i].type === "text" && inputFields[i].getAttribute("name").replace("input_", "") !== getType(type)) {
             inputFields[i].setAttribute("style", "visibility: hidden;");
         }
     }
